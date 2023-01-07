@@ -20,4 +20,4 @@ Implementation of paper of Kristensen, Mele: Adding and subtracting Black-Schole
 
 ## Reference
 
-1.Kristensen, D. & Mele, A. Adding and subtracting Black-Scholes: A new approach to approximating derivative prices in continuous-time models. J Financ Econ 102, 390–415 (2011).
+1. Kristensen, D. & Mele, A. Adding and subtracting Black-Scholes: A new approach to approximating derivative prices in continuous-time models. J Financ Econ 102, 390–415 (2011).
