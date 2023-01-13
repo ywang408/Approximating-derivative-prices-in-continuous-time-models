@@ -64,13 +64,14 @@ for i in S:
     w2_approx = w1_approx + T ** 3 / 6 * delta_func[2](i, v0, T)
     w3_approx = w2_approx + T ** 4 / 24 * delta_func[3](i, v0, T)
     w4_approx = w3_approx + T ** 5 / 120 * delta_func[4](i, v0, T)
+    bs_list.append(bs_res)
     w[0].append(w0_approx)
     w[1].append(w1_approx)
     w[2].append(w2_approx)
     w[3].append(w3_approx)
     w[4].append(w4_approx)
 df = pd.DataFrame(
-    {"S": S, "FFT": fft_a, "N=0": w[0], "N=1": w[1], "N=2": w[2],
+    {"S": S, "FFT": fft_a, "bs":bs_list, "N=0": w[0], "N=1": w[1], "N=2": w[2],
      "N=3": w[3], "N=4": w[4]})
 print(df)
 df.to_csv("panel_a.csv")
